@@ -1,5 +1,6 @@
 ﻿/*
  * Bill Nicholson
+ * Modified by Eric Davin
  * nicholdw@ucmail.uc.edu
  * Simulate the Monty Hall problem to show that switching doors increases the player's chance of winning.
  * https://www.scientificamerican.com/article/the-3-door-monty-hall-problem/
@@ -16,7 +17,7 @@ namespace MontyHallProblem {
             Simulate();
         }
         public static void Simulate() {
-            int TOTAL_GAMES = 100000;
+            int TOTAL_GAMES = 10000000;
             Random r = new Random();
             int[] doors = new int[3];
             int playerWins = 0;
